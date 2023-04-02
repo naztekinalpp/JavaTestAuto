@@ -4,33 +4,18 @@ package ooptask;
 //what can do: method
 //then create constructor
 
-public class Cat {
-    String name;
-    int age;
+public class Cat extends Animal {
 
-    Cat(){
-
+    Cat(String name, int age) {
+        super(name, age);
     }
 
-    Cat(String name, int age){
-        this.name = name;
-        this.age = age;
-    }
-
-
-    void sleep(){
+    void catchMice() {
 
     }
-
-    void catchMice(){
-
-    }
-
-    void makeSound(){
-
-    }
-
-    void eat(){
+    void eat() { //method overriding
         System.out.println("Cat is eating");
     }
+
+
 }

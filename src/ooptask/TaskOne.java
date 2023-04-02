@@ -13,7 +13,6 @@ public class TaskOne { //this is a seperate class to create instances of dog and
         Dog dog = new Dog("Pike", 7);
 
         //now we are ready to use their methods
-
         cat.eat();
         dog.eat();
 
