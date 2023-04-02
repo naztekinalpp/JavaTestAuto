@@ -13,7 +13,7 @@ public class Cat extends Animal {
     void catchMice() {
 
     }
-    void eat() { //method overriding
+    public void eat() { //method overriding
         System.out.println("Cat is eating");
     }
 
