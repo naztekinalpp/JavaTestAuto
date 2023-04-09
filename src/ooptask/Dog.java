@@ -1,28 +1,39 @@
 package ooptask;
 
-public class Dog {
-    String name;
-    int age;
-
-    Dog() {
-
-    }
+public class Dog extends Animal {
 
     Dog(String name, int age) {
-        this.name = name;
-        this.age = age;
+        super(name, age);
     }
 
-
+    @Override
     void sleep() {
-
+        System.out.println("Sleep [DOG]");
     }
 
-    void makeSound() {
-
-    }
-
-    void eat() {
+    public void eat() { //method overriding
         System.out.println("Dog is eating");
+    }
+
+    @Override
+    void makeSound() {
+        System.out.println("wOOOOUUUFFF");
+
+    }
+
+    public void play(){
+        System.out.println("Dog plays");
+
+    }
+
+    @Override
+    public void askToPlay() {
+        System.out.println("Dog asks to play");
+
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Dog run");
     }
 }
