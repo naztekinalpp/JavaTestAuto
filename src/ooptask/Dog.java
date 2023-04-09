@@ -6,12 +6,34 @@ public class Dog extends Animal {
         super(name, age);
     }
 
+    @Override
+    void sleep() {
+        System.out.println("Sleep [DOG]");
+    }
+
     public void eat() { //method overriding
         System.out.println("Dog is eating");
     }
 
-    private void play(){
-        
+    @Override
+    void makeSound() {
+        System.out.println("wOOOOUUUFFF");
+
     }
 
+    public void play(){
+        System.out.println("Dog plays");
+
+    }
+
+    @Override
+    public void askToPlay() {
+        System.out.println("Dog asks to play");
+
+    }
+
+    @Override
+    public void move() {
+        System.out.println("Dog run");
+    }
 }

@@ -1,6 +1,6 @@
 package ooptask;
 
-public class Animal {
+public abstract class Animal implements Movable, Playable {
     String name;
     int age;
 
@@ -13,17 +13,9 @@ public class Animal {
         this.age = age;
     }
 
+    abstract void sleep(); //abstract, if we have an abstract method, class must be abstract
+    abstract void eat();
+    abstract void makeSound();
 
-    void sleep() {
 
-    }
-
-
-    void makeSound() {
-        System.out.println("Animal is making sound");
-    }
-
-    protected void eat() {
-        System.out.println("Animal is eating");
-    }
 }
